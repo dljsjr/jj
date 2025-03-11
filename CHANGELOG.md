@@ -69,6 +69,10 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 * `jj config edit` will now roll back to previous version if a syntax error has been introduced in the new config.
 
+* The `git.sign-on-push` config option has been changed from a boolean to a
+  string containing the revset of commits to be signed when `jj git push` is
+  run. The default value is `none()`. If `git.sign-on-push` was previously set
+  to `true`, it will be set to `mine()`.
 
 ### Fixed bugs
 
