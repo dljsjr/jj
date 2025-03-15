@@ -10,6 +10,21 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ### Release highlights
 
+### Breaking changes
+
+* The old `libgit2` code path for fetches and pushes has been removed,
+  and the `git.subprocess` setting along with it.
+
+### Deprecations
+
+### New features
+
+### Fixed bugs
+
+## [Unreleased]
+
+### Release highlights
+
 * Experimental support for transferring the change ID to/from Git remotes behind configuration
   setting `git.write-change-id-header`. If this is enabled, the change ID will be stored in the Git
   commit itself (in a commit header called `change-id`), which means it will be transferred by
